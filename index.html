@@ -7,7 +7,36 @@
       name="description"
       content="Frydrych Stavby je stavební společnost z Liberce. Nabízíme novostavby, rekonstrukce, zateplení fasád, zemní práce a kompletní stavební realizace."
     />
+    <meta name="robots" content="index, follow" />
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="Frydrych Stavby – Stavební společnost Liberec" />
+    <meta
+      property="og:description"
+      content="Rodinná stavební firma z Liberce. Novostavby, rekonstrukce a zateplení fasád — poctivé řemeslo a férové jednání na každém projektu."
+    />
+    <meta property="og:url" content="https://shilpavora04.github.io/PEBMedia-Test-Project/" />
+    <meta property="og:image" content="https://shilpavora04.github.io/PEBMedia-Test-Project/images/project1.jpg" />
+    <meta name="twitter:card" content="summary_large_image" />
     <title>Frydrych Stavby – Stavební společnost Liberec</title>
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "LocalBusiness",
+        "name": "Frydrych Stavby",
+        "image": "https://shilpavora04.github.io/PEBMedia-Test-Project/images/project1.jpg",
+        "telephone": "+420777000123",
+        "email": "info@frydrychstavby.cz",
+        "address": {
+          "@type": "PostalAddress",
+          "addressLocality": "Liberec",
+          "addressRegion": "Liberecký kraj",
+          "addressCountry": "CZ"
+        },
+        "areaServed": "Liberec a okolí",
+        "url": "https://shilpavora04.github.io/PEBMedia-Test-Project/",
+        "description": "Stavební společnost z Liberce specializující se na novostavby, rekonstrukce, zateplení fasád a zemní práce."
+      }
+    </script>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
@@ -15,45 +44,10 @@
       rel="stylesheet"
     />
     <link href="css/style.css" rel="stylesheet" type="text/css" />
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css"
-      as="style"
-      onload="
-        this.onload = null;
-        this.rel = 'stylesheet';
-      "
-    />
-    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css" /></noscript>
-
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css"
-      as="style"
-      onload="
-        this.onload = null;
-        this.rel = 'stylesheet';
-      "
-    />
-    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css" /></noscript>
-
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
-      as="style"
-      onload="
-        this.onload = null;
-        this.rel = 'stylesheet';
-      "
-    />
-    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" /></noscript>
-
-    <link
-      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
-      as="style"
-      onload="
-        this.onload = null;
-        this.rel = 'stylesheet';
-      "
-    />
-    <noscript><link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" /></noscript>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.5.9/slick-theme.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css" />
 
     <link rel="canonical" href="https://shilpavora04.github.io/PEBMedia-Test-Project/" />
   </head>
@@ -66,8 +60,8 @@
             <a href="#"><span>Frydrych</span><br />Stavby</a>
           </div>
           <div class="header_nav_wrapper">
-            <nav>
-              <ul class="nav_menu">
+            <nav aria-label="Hlavní navigace">
+              <ul class="nav_menu" id="primary-navigation">
                 <li class="nav_item"><a class="nav_link" href="#about_us">O nás</a></li>
                 <li class="nav_item">
                   <a class="nav_link" href="#services">Služby</a>
@@ -85,9 +79,9 @@
                   <a href="#contact" class="button">Kontaktujte nás</a>
                 </li>
               </ul>
-              <div class="hamburger">
-                <span class="bar"></span>
-              </div>
+              <button class="hamburger" type="button" aria-expanded="false" aria-controls="primary-navigation" aria-label="Otevřít navigaci">
+                <span class="bar" aria-hidden="true"></span>
+              </button>
             </nav>
           </div>
         </div>
@@ -324,8 +318,8 @@
               <div class="custom_dots"></div>
             </div>
             <div class="slider_arrow d_flex">
-              <button type="button" class="slick-arrow slick-prev">❮</button>
-              <button type="button" class="slick-arrow slick-next">❯</button>
+              <button type="button" class="slick-arrow slick-prev" aria-label="Přejít na předchozí projekt">❮</button>
+              <button type="button" class="slick-arrow slick-next" aria-label="Přejít na další projekt">❯</button>
             </div>
           </div>
         </div>

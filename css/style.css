@@ -429,6 +429,8 @@ a.nav_link:hover:after {
     position: relative;
     justify-content: center;
     align-items: center;
+    background-color: transparent;
+    border: 0;
 }
 
 .bar {
